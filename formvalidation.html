@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var a=document.form1.pass.value;
+var e=document.form1.uname.value;
+
+var s=new String(e);
+          
+if(s.length==0 || s.charAt(0)==' ')
+{
+alert("ERROR: User Name Is Blank Please Fill It");
+document.form1.uname.focus();
+}
+else if(a.length==0 || a.charAt(0)==' ')
+{
+alert("ERROR: Password is Blank Please Fill It");
+document.form1.pass.focus();
+}
+else if(a.length<4 || a.charAt(0)==' ')
+{
+alert("ERROR: Password is less than 8 characters");
+document.form1.pass.focus();
+}
+// else if(form1.Gender[0].checked==true)
+// {
+// alert("clicked");
+// }
+// else if(form1.Gender[1].checked==true)
+// {
+// alert("clicked another");
+// }
+else if((form1.Gender[0].checked==false)&&(form1.Gender[1].checked==false))
+{
+alert("please specify gender");
+}
+else if(form1.Human.checked==false)
+{
+alert("please specify your species");
+}
+}
+</script> 
+
+</head>
+<body>
+    <form name="form1" >
+        <table border="0"cellspacing="1" cellpadding="10" bgcolor="aquagreen">
+     <tr>
+        <legend>USER FORM </legend></tr>
+        <tr><td>
+        Enter Name</td><td> <input type="text" name="uname" placeholder="Enter name" size="30"/></td></tr>
+        <tr><td>
+        Enter password:</td><td> <input type="password" name="pass" size="30"/></td>
+        <tr><td>
+        Enter Email-Address</td><td> <input type="email" name="email" size="30"/></td></tr>
+        <tr><td>Enter phone number</td><td> <input type="phone number" name="phone number" size="30"/></td>
+        </tr>
+        <td>Gender</td>
+<td><input type="radio" name="Gender" value="FEMALE" />FEMALE</br>
+<input type="radio" name="Gender" value="MALE" />MALE</br>
+</td></tr>
+<tr><td>
+    <label>Are you Human</label>
+</td>
+    <td><input type="checkbox" name="Human"  />I am Human</br>
+    </td></tr>
+<tr><td>
+    <input type=reset name=b2 value="Clear Fields"> 
+</td>
+<td>
+<input type=button value=SUBMIT name=b1 onclick=validate() style="background:'pink';color:'blue'" ><td align=left colspan=2></td></tr>
+    </form></table>
+</body>
+</html>

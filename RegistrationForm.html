@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>friendship zone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .imagesection {
+            text-align: center;
+            padding: 20px;
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        button a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <script>
+        // Add interactivity using JavaScript
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get form elements
+            const form = document.querySelector("form");
+            const submitButton = document.querySelector("button[type='submit']");
+
+            // Add event listener to form submission
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent default form submission
+                // Handle form data (e.g., validate inputs, send data to server)
+                alert("Form submitted! Thank you for registering.");
+            });
+
+            // Add event listener to buttons
+            const userButton = document.querySelector("#userButton");
+            const adminButton = document.querySelector("#adminButton");
+
+            userButton.addEventListener("click", function () {
+                // Handle user button click (e.g., redirect to user confirmation page)
+                alert("User registration selected!");
+            });
+
+            adminButton.addEventListener("click", function () {
+                // Handle admin button click (e.g., redirect to admin confirmation page)
+                alert("Admin registration selected!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="imagesection">
+        <h1>  Friendship Zone </h1>
+        <img src="Friends.PNG">
+    </div>
+    <h2>Add Your Details to Register</h2>
+    <form>
+    <table>
+        <tr><td>
+            Enter Name:</td><td> <input type="text" name="uname" placeholder="Enter name" size="30"/>
+        </td></tr>
+           <tr><td>
+             Enter Email-Address:</td><td>  <input type="email" name="email" size="30"/>
+            </td></tr>
+            <tr><td>
+                Enter age:</td><td> <input type="phone number" name="phone number" size="30"/>
+                </td></tr>
+           <tr><td>
+            enter birthday:</td><td> <input type="dob" name="dob" size="30"/>
+            <tr><td>gender</td>
+            </td><td> <input type="radio" name="grade" value="9th" /> male </br>
+              <input type="radio" name="grade" value="9th" />female</br>
+        </td></tr>
+           <tr><td>
+            about:</td><td> <input type="abt" name="about" size="50"/>
+        </td></tr>
+           <tr><td>
+            phone: </td><td> <input type="phone" name="mob no" size="30"/>
+        </td></tr>
+        <tr><td>interested in</td>
+        </td><td> <input type="radio" name="grade" value="9th" /> friendship</br>
+          <input type="radio" name="grade" value="9th" />dating</br>
+    </td></tr>
+    <tr><td>attachment</td><td><input type="file"name="newfriendlist.html"/><inputtype="submit"value="Upload" /></td></tr>
+    <tr><td> <button><a href="RegistrationConfirmation.html">user</a></button></td>
+        <td> <button><a href="RegistrationConfirmationforAdmin.html">admin</a></button></td>
+    </tr>
+    </form>
+    </table>
+</body>
+</html>

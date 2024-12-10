@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Zone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .imagesection {
+            text-align: center;
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+
+        h1 {
+            color: #009688;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #009688;
+            color: #fff;
+        }
+
+        .register {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e0e0e0;
+        }
+
+        a {
+            color: #009688;
+            text-decoration: none;
+        }
+
+        button {
+            background-color: #009688;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #007a63;
+        }
+    </style>
+</head>
+<body>
+    <div class="imagesection">
+        <h1>Friendship Zone</h1>
+        <img src="Friends.PNG" alt="Friends Image">
+    </div>
+    <h2>Details of People...</h2>
+    <table border="" cellspacing="15" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>About</th>
+            <th>Send Request</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>r1</td>
+            <td>r2</td>
+            <td>rz</td>
+            <td>r4</td>
+        </tr>
+        <tr>
+            <td>r1</td>
+            <td>r2</td>
+            <td>rz</td>
+            <td>r4</td>
+        </tr>
+    </table>
+    <div class="register">
+        <button><a href="RegistrationForm.html">Register to get added to the list</a></button>
+    </div>
+    <script>
+        // Handle button click
+        const registerButton = document.querySelector(".register button");
+        registerButton.addEventListener("click", function () {
+            alert("You clicked the registration button!");
+        });
+    </script>
+</body>
+</html>
